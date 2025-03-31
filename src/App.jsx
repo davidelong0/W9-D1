@@ -2,13 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ButtonComponent from './ButtonComponent';
+import ImageComponent from './ImageComponent';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
       <div>
+      <ImageComponent src='https://preview.redd.it/2frel64qveja1.png?width=640&crop=smart&auto=webp&s=4a2404ecac70d503ee4d96dd1a613a8afb93abaf' alt='solo-img'/>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -28,6 +33,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <header>
+        <ButtonComponent text="fatto"/>
+        <ButtonComponent text="sono"/>
+        <ButtonComponent text="riuscito"/>
+      </header>
     </>
   )
 }
